@@ -32,7 +32,7 @@ const Header = (props) => {
             <span>Hello, {userr}</span>
           )}
           {userr !== '' && userr !== undefined && !signed && (
-            <Link to="account">
+            <Link to="/bank-page/account">
               <button className="online-bank-btn">My Account</button>
             </Link>
           )}
@@ -42,7 +42,7 @@ const Header = (props) => {
             </button>
           )}
           {!signed && (
-            <Link to="/">
+            <Link to="/bank-page">
               <button className="online-bank-btn" onClick={handleSignedClick}>
                 Sign Out
               </button>
