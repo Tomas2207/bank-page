@@ -1,0 +1,191 @@
+.account-page-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  column-gap: 20px;
+}
+
+.account-display {
+  width: 60%;
+  margin: 0 0 0 auto;
+}
+
+.account-h3 {
+  width: 50%;
+  margin: 35px 0;
+  font-weight: 400;
+}
+
+.account-div {
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgb(97, 96, 96);
+}
+
+.account-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.account-amount {
+  margin-left: auto;
+  min-width: 100px;
+}
+
+.credit-card-svg {
+  width: 50px;
+  margin: 0 20px 0 0;
+}
+
+.transfer-span {
+  color: var(--main-color);
+}
+
+.transfer-span:hover {
+  color: skyblue;
+  cursor: pointer;
+}
+
+.account-side-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.account-side-menu > div {
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.692);
+  padding: 20px 30px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.account-side-menu > div:hover {
+  background-color: rgba(128, 128, 128, 0.26);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expand-down {
+  width: 20px;
+  height: 20px;
+}
+
+.transfer-container {
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.transfer-form {
+  display: flex;
+  gap: 10px;
+}
+
+.transfer-h4 {
+  font-size: 1.4em;
+  font-weight: 400;
+  background-color: var(--main-color);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 3px 4px black;
+}
+
+.succesful-transfer {
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  color: white;
+  text-align: center;
+}
+
+input {
+  height: 27px;
+  background-color: rgba(128, 128, 128, 0.212);
+  border: 1px solid gray;
+}
+
+textarea {
+  background-color: rgba(128, 128, 128, 0.212);
+  border: 1px solid gray;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.transfer-history {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+
+.transfer-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 95%;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.692);
+}
+
+.transfer-h3 {
+  align-self: flex-start;
+  margin: 0 0 20px 5%;
+}
+
+.transfer-title {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.transfer-title > div {
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
+#side-span1,
+#side-span2 {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+}
+#side-span1:hover,
+#side-span2:hover {
+  background-color: var(--secondary-skyblue);
+}
+
+@media only screen and (max-width: 960px) {
+  .account-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .account-display {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .account-div {
+    min-width: 280px;
+  }
+
+  .account-side-menu {
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .account-side-menu > div {
+    padding: 20px 30px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
