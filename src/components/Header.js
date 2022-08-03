@@ -23,7 +23,7 @@ const Header = (props) => {
     <div className={!signed && userr === '' ? 'none' : 'header'}>
       <header>
         <h1>
-          <Link to="/">Online Bank</Link>
+          <Link to="/bank-page/">Online Bank</Link>
         </h1>
         <div className="header-div">Credit Card</div>
         <div className="header-div">Become a client</div>
@@ -32,7 +32,7 @@ const Header = (props) => {
             <span>Hello, {userr}</span>
           )}
           {userr !== '' && userr !== undefined && !signed && (
-            <Link to="/bank-page/account">
+            <Link to="/bank-page/account/">
               <button className="online-bank-btn">My Account</button>
             </Link>
           )}
@@ -42,7 +42,7 @@ const Header = (props) => {
             </button>
           )}
           {!signed && (
-            <Link to="/bank-page">
+            <Link to="/bank-page/">
               <button className="online-bank-btn" onClick={handleSignedClick}>
                 Sign Out
               </button>
