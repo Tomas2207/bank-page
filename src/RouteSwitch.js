@@ -37,17 +37,13 @@ const RouteSwitch = () => {
         <Routes>
           <Route path="/bank-page/" element={<App />} />
           <Route
-            path="/bank-page/account/"
+            path="/account/"
             element={<AccountPage user={user} history={history} />}
           />
           <Route
-            path="/bank-page/account/transfer/"
+            path="/transfer/"
             element={<TransferForm handleAmount={handleAmount} />}
           />
-          {/* <Route
-            path="account"
-            element={<TransferHistory handleAmount={handleAmount} />}
-          /> */}
         </Routes>
       </BrowserRouter>
       <Footer />

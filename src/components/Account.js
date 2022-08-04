@@ -10,7 +10,7 @@ const Account = (props) => {
 
       <div>
         <Link
-          to="/bank-page/account/transfer/"
+          to="/transfer/"
           state={{ from: props.name, handleAmount: props.handleAmount }}
         >
           <span className="transfer-span">Transfer</span>

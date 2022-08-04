@@ -32,7 +32,7 @@ const Header = (props) => {
             <span>Hello, {userr}</span>
           )}
           {userr !== '' && userr !== undefined && !signed && (
-            <Link to="/bank-page/account/">
+            <Link to="/account/">
               <button className="online-bank-btn">My Account</button>
             </Link>
           )}
