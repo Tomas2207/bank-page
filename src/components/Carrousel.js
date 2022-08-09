@@ -53,7 +53,13 @@ const Carrousel = () => {
       >
         {slidesData.map((info, index) => {
           return (
-            <div className="my-slide" key={index}>
+            <div
+              className="my-slide"
+              key={index}
+              style={{
+                backgroundImage: `url("${info.image}")`,
+              }}
+            >
               <div className="slide-content">
                 <div className="carrousel-content">
                   <div className="text-box">
@@ -62,7 +68,6 @@ const Carrousel = () => {
                   </div>
                   <button className="carrousel-btn">Know more</button>
                 </div>
-                <img className="carrousel-img" src={info.image} alt="" />
               </div>
             </div>
           );

@@ -30,7 +30,7 @@
 }
 
 .account-amount {
-  margin-left: auto;
+  margin-left: 16px;
   min-width: 100px;
 }
 
@@ -171,9 +171,6 @@ textarea:focus {
     width: 90%;
     margin: 0 auto;
   }
-  .account-div {
-    min-width: 280px;
-  }
 
   .account-side-menu {
     display: flex;
@@ -187,5 +184,23 @@ textarea:focus {
     width: 250px;
     display: flex;
     justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .account-div {
+    min-width: 240px;
+  }
+  .credit-card-svg {
+    width: 25px;
+  }
+
+  .transfer-history {
+    font-size: 0.9em;
+  }
+
+  .transfer-history > div {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
   }
 }

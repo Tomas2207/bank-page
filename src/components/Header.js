@@ -29,7 +29,7 @@ const Header = (props) => {
         <div className="header-div">Become a client</div>
         <div>
           {userr !== '' && userr !== undefined && !signed && (
-            <span>Hello, {userr}</span>
+            <div className="name-div">Hello, {userr}</div>
           )}
           {userr !== '' && userr !== undefined && !signed && (
             <Link to="/bank-page/account">

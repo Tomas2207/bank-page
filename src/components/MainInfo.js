@@ -19,7 +19,7 @@ const MainInfo = () => {
         </div>
         <div className="item-2">
           <img src="images/item2.jpg" alt="" className="info-image sub-img" />
-          <div>
+          <div className="item-info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             voluptatum alias odit incidunt vero ad!
             <div className="know-more">Know more</div>
@@ -27,7 +27,7 @@ const MainInfo = () => {
         </div>
         <div className="item-3">
           <img src="images/item3.jpg" alt="" className="info-image sub-img" />
-          <div>
+          <div className="item-info">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             fugiat ex quaerat assumenda vero distinctio!
             <div className="know-more">Know more</div>
